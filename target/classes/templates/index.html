@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:replace="components/nav"></nav>
+    <h1>Mi primera web en spring boot</h1>
+<p>Mis cosas:</p>
+    <ul th:each="cosa : ${cosas}">
+        <li th:text="${cosa.nombre}" ></li>
+    </ul>
+</body>
+</html>
